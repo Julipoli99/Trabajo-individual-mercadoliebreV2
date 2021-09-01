@@ -1,0 +1,50 @@
+<html>
+    <body>
+        <h1>Editando: <%=pelicula.title%></h1>
+
+
+        <form action="/peliculas/editar/<%=pelicula.id%>" method="POST">
+            <label for="">Titulo</label>
+            <input type="text" name="titulo" id="" value="<%=pelicula.title%>">
+            <br>
+
+            <label for="">Duracion</label>
+            <input type="text" name="duracion" id="" value="<%=pelicula.length%>">
+            <br>
+
+            <label for="">Calificacion</label>
+            <input type="number" name="calificacion" id="" value="<%=pelicula.rating%>">
+            <br>
+
+            <label for="">Premios</label>
+            <input type="number" name="premios" id="" value="<%=pelicula.awards%>">
+            <br>
+
+            <label for="">Fecha de estreno</label>
+            <input type="date" name="fecha_estreno" id="" value="<%=pelicula.release_date%>">
+            <br>
+
+            <label for="">Genero</label>
+            <select name="genero">
+                <% for (let i = 0; i < generos.length; i++) { %>
+                    <% if (generos[i].id == pelicula.genre_id) { %>
+                        <option value="<%=generos[i].id%>" selected>
+                            <%=generos[i].name%>
+                        </option>
+                    <% } else { %>
+                        <option value="<%=generos[i].id%>">
+                            <%=generos[i].name%>
+                        </option>
+                   <% } %>
+
+
+                <% } %>
+
+
+            </select>
+
+            <br>
+            <button type="submit">Editar!</button>
+        </form>
+    </body>
+</html>

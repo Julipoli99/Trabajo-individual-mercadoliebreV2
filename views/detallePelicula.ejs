@@ -1,0 +1,48 @@
+<html>
+    <link rel="stylesheet" href="/css/home.css">
+    <%- include("partials/header")%>
+    <body>
+        <h1 style="text-align: start;"><%=pelicula.title%></h1>
+        <div class="ul-detallepeli">
+        <ul>
+            <li>
+                <p>Duracion:</p> <%=pelicula.length%>
+            </li>
+
+            <li>
+                <p>Calificacion:</p> <%=pelicula.rating%>
+            </li>
+
+            <li>
+                <p>Premios:</p> <%=pelicula.awards%>
+            </li>
+
+            <li>
+                <p>Fecha de estreno:</p> <%=pelicula.release_date%>
+            </li>
+
+            <li>
+                <p>Genero:</p> <%=pelicula.genero.name%>
+            </li>
+
+            
+                <li><p>Actores:</p></li>
+                <ul>
+                <% for (let i = 0; i < pelicula.actores.length; i++) { %>
+
+                    <li>
+                        <%=pelicula.actores[i].first_name%> - <%=pelicula.actores[i].last_name%>
+                    </li>
+                <% } %>
+                </ul>
+        </ul>
+</div>
+                                <br>
+                <a href="/peliculas/editar/<%=pelicula.id%>">
+                    <button type="submit" id="editar-peli">Editar</button>
+                </a>
+                <form action="/peliculas/delete/<%=pelicula.id%>" method="POST">
+                <button type="submit" id="borrar-peli" onclick="return confirm('¿Estas seguro de que quieres borrar esta pelicula?');">Borrar!</button>
+                </form>
+    </body>
+</html>

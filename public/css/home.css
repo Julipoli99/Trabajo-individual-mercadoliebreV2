@@ -1,0 +1,329 @@
+*{
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+header{
+    background-color: #EAC926;
+}
+
+.ul-listadopelis{
+    margin-top: 20px;
+    display: inline-block;
+}
+.ul-listadopelis li{
+    font-size: 20px;
+    padding-top: 15px;
+    border-bottom: black 1px solid;
+}
+.ul-listadopelis a{
+    font-size: 20px;
+}
+
+
+.ul-detallepeli{
+    margin-top: 20px;
+    display: inline-block;
+}
+.ul-detallepeli li{
+    font-size: 20px;
+    padding-top: 15px;
+}
+.ul-detallepeli p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#editar-peli{
+    margin-top: 20px;
+    font-size: 20px;
+}
+#editar-peli:hover{
+    background-color: blue;
+    color: white;
+    transition: .5s;
+}
+
+#borrar-peli{
+    margin-top: 20px;
+    font-size: 20px;
+}
+#borrar-peli:hover{
+    background-color: red;
+    color: white;
+    transition: .5s;
+}
+
+
+/*header, section, article{
+    position: sticky;
+}*/
+
+#logo-mercadoliebre{
+    width: 80%;
+}
+
+
+
+.contenedor1{
+    /* border: 1px  solid black;*/
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+}
+
+.navbar{
+    margin-left: 5%;
+    margin-top: 20px;
+    
+    
+}
+
+.hand-usd{
+   margin-left: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+}
+
+.navbar input{
+    height: 25px;
+}
+
+.navbar button{
+    height: 20px;
+    width: 20px;
+}
+
+
+.contenedor-ofertas{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start
+}
+
+#ofertas{
+    padding-right: 50px;
+}
+#tiendas-oficiales{
+    padding-right: 50px;
+}
+#vender{
+    padding-right: 50px;
+}
+#ayuda{
+    padding-right: 50px;
+}
+
+
+
+
+
+
+.contenedor-usuario{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+#editar-usuario{
+    padding-left: 50px;
+}
+#crea-cuenta{
+    padding-left: 50px;
+}
+#ingresa{
+    padding-left: 50px;
+}
+#mis-compras{
+    padding-left: 50px;
+}
+#mis-peliculas{
+    padding-left: 50px;
+}
+
+
+
+
+#contenedor-total{
+    background-color: #ebebeb;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.contenedor-ultimavisita{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+.box-shadow{
+    box-shadow: 2px 4px 15px 0 black;
+}
+.box-shadow:hover{
+    transform: scale(1.1);
+    transition-duration: .5s
+    
+}
+
+
+
+
+
+
+
+.ultima-visita{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: white;
+}
+
+
+.contenedor-precio{
+    
+    border-top: #B8C2BB 1px solid;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+
+
+
+
+
+#descuento{
+    align-self: flex-end;
+    margin-right: 10%;
+    position: absolute;
+    color: green;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+
+#precio{
+    margin-left: 10%;
+    margin-top: 10px;
+    font-size: 20px;
+    
+    
+}
+
+#href-producto{
+    text-decoration: none;
+}
+#href-producto:visited{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#descripcion{
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+.contenedor-masvistos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+footer p{
+    font-size: 15px;
+   
+}
+
+
+
+#icono i{
+    text-align: center;
+    font-size: 2em;
+    color: blue;
+    align-items: center;
+}
+
+
+
+footer section{
+    text-align: center;
+}
+
+.tarjeta-icono i{
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    
+    
+}
+.regalo-icono i{
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    
+}
+
+.seguridad-icono i{
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    
+}
+
+
+footer p{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    
+}
+
+#caja-footer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+
+#copyright{
+    text-align: start;
+    font-size: 10px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+

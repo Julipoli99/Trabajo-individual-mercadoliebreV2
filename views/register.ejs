@@ -1,0 +1,66 @@
+<%-include("partials/head.ejs")%>
+
+<title>Registro</title>
+<link rel="stylesheet" href="/css/registro.css">
+
+
+<body>
+   
+    <img src="/img/img-home-banner.jpg" alt="" class="home-banner">
+
+    <section class="form-registrer">
+        <h1>Registro</h1>
+
+    <form action="/login/registro" method="POST" enctype="multipart/form-data">
+        
+        <label for="nombre_apellido"></label>
+        <input type="text" name="nombre_apellido" id="nombre-apellido" placeholder="Nombre y apellido" class="controls" maxlength="12" required>
+
+        <label for="nombre_usuario"></label>
+        <input type="text" name="nombre_usuario" id="nombre-usuario" placeholder="Nombre de usuario" class="controls" required>
+
+        <label for="fecha"></label>
+        <input type="date" name="fecha" id="fecha" placeholder="" class="controls">
+
+        <label for="domicilio"></label>
+        <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" class="controls" required>
+
+        <label for="perfilUsuario">Comprador</label>
+        <input type="radio" name="perfilUsuario" value="Comprador">
+        <label for="perfilUsuario">Vendedor</label>
+        <input type="radio" name="perfilUsuario" value="Vendedor">
+
+        <div class="checkbox">
+        <label for="Interes" id="interes">Interés:</label>
+        <label for="Interes">Electro</label>
+        <input type="checkbox" name="Interes" value="Electro">
+
+        <label for="Interes">Moda</label>
+        <input type="checkbox" name="Interes" value="Moda">
+
+        <label for="Interes">Hogar</label>
+        <input type="checkbox" name="Interes" value="Hogar">
+
+        <label for="Interes">Juguetería</label>
+        <input type="checkbox" name="Interes" value="Juguetería">
+
+        <label for="Interes">Vida sana</label>
+        <input type="checkbox" name="Interes" value="Vida-sana">
+        </div>
+
+        <div class="imagen-contraseña">
+        <label for="Foto">Seleccionar una imagen para el perfil</label>
+        <input type="file" name="Foto" accept=".jpg">
+
+        <input type="password" name="Contraseña" placeholder="Contraseña" required>
+        <input type="password" name="Contraseña" placeholder="Confirmar contraseña" required>
+        </div>
+        
+        <br>
+        <div id="boton">
+        <button type="submit" id="boton1">Enviar</button><br>
+        <button type="reset" id="boton2">Borrar</button>
+        </div>
+        <p>¿Ya tienes una cuenta? <a href="/login">Ingresa aquí!</a></p>
+    </form>
+    </section>

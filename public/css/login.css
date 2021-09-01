@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EAC926;
+    
+}
+
+.form-login{
+    width: 400px;
+    background-color: #d5d5d5;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    margin-bottom: 100px;
+}
+
+.form-login h1{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.controls{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.form-login button{
+    width: 100%;
+    
+    transition: background-color .5s, color .3s;
+    padding: 12px;
+    
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+
+
+
+p a{
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: #02a;
+    color: white;
+}
+
+/* FOOTER*/
+
+footer section{
+    text-align: center;
+}
+
+.tarjeta-icono i{
+    color: blue;
+    font-size: 2em;
+    
+    
+    
+}
+.regalo-icono i{
+    color: blue;
+    font-size: 2em;
+    
+    
+}
+
+.seguridad-icono i{
+    color: blue;
+    font-size: 2em;
+    
+    
+}
+
+
+footer p{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    
+}
+
+#caja-footer{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#copyright{
+    
+    text-align: start;
+    margin-left: 10px;
+}
+
+footer{
+    background-color: white;
+}

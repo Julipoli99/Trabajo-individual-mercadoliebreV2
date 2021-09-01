@@ -1,0 +1,21 @@
+<html>
+    <link rel="stylesheet" href="/css/home.css">
+
+    <%- include("partials/header") %>
+    <body>
+        
+        <h1 style="text-align:start;">Listado de Peliculas</h1>
+
+        <div class="ul-listadopelis">
+        <ul>
+            <% for (let i = 0; i < peliculas.length; i++) { %>
+
+                <li>
+                    <a href="/peliculas/<%=peliculas[i].id%>"><%= peliculas[i].title %></a>
+                </li>
+            <% } %>
+        </ul>
+        </div>
+    </body>
+    
+</html>
