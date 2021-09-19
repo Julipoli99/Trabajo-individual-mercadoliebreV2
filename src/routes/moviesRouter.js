@@ -10,6 +10,11 @@ const moviesController = require ("../controllers/moviesController");
 moviesRouter.get("/", moviesController.index);
 
 
+//          CREAR PELICULA          //
+moviesRouter.get("/crear", moviesController.crear);
+moviesRouter.post("/crear", moviesController.crearPeli);
+
+
 //          DETALLE PELICULA            //
 moviesRouter.get("/:id", moviesController.detalle);
 
@@ -22,6 +27,8 @@ moviesRouter.post("/editar/:id", moviesController.actualizar);
 
 //          BORRAR PELICULA             //
 moviesRouter.post("/delete/:id", moviesController.borrar);
+
+
 
 
 

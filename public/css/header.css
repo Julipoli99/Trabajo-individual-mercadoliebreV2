@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#logo-mercadoliebre{
+    width: 80%;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+.contenedor-ofertas{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start
+}
+
+.contenedor-usuario{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#editar-usuario{
+    padding-left: 50px;
+}
+#crea-cuenta{
+    padding-left: 50px;
+}
+#ingresa{
+    padding-left: 50px;
+}
+#mis-compras{
+    padding-left: 50px;
+}
+#mis-peliculas{
+    padding-left: 50px;
+}
+
+.contenedor1{
+    /* border: 1px  solid black;*/
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+}
+
+.navbar{
+    margin-left: 5%;
+    margin-top: 15px;
+    
+    
+}
+
+.hand-usd{
+    margin-left: auto;
+     position: absolute;
+     left: 50%;
+     bottom: 40%;
+ }
+
+
+
+
+
+
+ .navbar input{
+    height: 25px;
+}
+
+
+
+#ofertas{
+    padding-right: 50px;
+}
+#tiendas-oficiales{
+    padding-right: 50px;
+}
+#vender{
+    padding-right: 50px;
+}
+#ayuda{
+    padding-right: 50px;
+}

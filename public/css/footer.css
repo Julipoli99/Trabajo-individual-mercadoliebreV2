@@ -1,0 +1,70 @@
+footer{
+    background-color: white;
+}
+
+
+footer p{
+    font-size: 15px;
+   
+}
+
+
+
+#icono i{
+    text-align: center;
+    font-size: 2em;
+    color: blue;
+    align-items: center;
+}
+
+
+
+footer section{
+    text-align: center;
+}
+
+.tarjeta-icono i{
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    
+    
+}
+.regalo-icono i{
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    
+}
+
+.seguridad-icono i{
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    
+}
+
+
+footer p{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    
+}
+
+#caja-footer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+
+#copyright{
+    text-align: start;
+    font-size: 10px;
+    margin-left: 15px;
+    font-weight: bold;
+}

@@ -1,5 +1,8 @@
 <html>
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/peliculas.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <%- include("partials/header")%>
     <body>
         <h1 style="text-align: start;"><%=pelicula.title%></h1>
@@ -44,5 +47,7 @@
                 <form action="/peliculas/delete/<%=pelicula.id%>" method="POST">
                 <button type="submit" id="borrar-peli" onclick="return confirm('¿Estas seguro de que quieres borrar esta pelicula?');">Borrar!</button>
                 </form>
+
+            <%-include("partials/footer.ejs")%>
     </body>
 </html>

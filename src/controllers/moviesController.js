@@ -4,6 +4,7 @@ const {validationResult} = require ("express-validator");
 const bcryptjs = require("bcryptjs");
 const db = require ("../../database/models");
 const { sequelize, Sequelize } = require('../../database/models');
+
 //const { where } = require('sequelize/types');
 const op = Sequelize.Op;
 
@@ -20,6 +21,9 @@ const controlador = {
         })
             .then(function(pelicula){
                 res.render("detallePelicula", {pelicula: pelicula})
+            })
+            .catch(function(error){
+                console.log(error);
             })
     },
     editar: (req, res) => {
@@ -54,6 +58,24 @@ const controlador = {
             }
         })
         res.redirect("/peliculas");
+    },
+    crear: (req, res) => {
+        db.Genero.findAll()
+            .then(function(generos){
+                res.render("crearPelicula", {generos: generos})
+            })
+        
+    },
+    crearPeli: (req, res) => {
+        db.Pelicula.create({
+            title: req.body.titulo,
+            awards: req.body.premios,
+            release_date: req.body.fecha_estreno,
+            genre_id: req.body.genero,
+            length: req.body.duracion,
+            rating: req.body.calificacion,
+        })
+        res.redirect("/peliculas")
     }
 }
 

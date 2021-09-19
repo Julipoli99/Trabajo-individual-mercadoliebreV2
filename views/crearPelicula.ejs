@@ -1,0 +1,56 @@
+<html>
+    <link rel="stylesheet" href="/css/peliculas.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <body>
+        
+        <%-include("partials/header.ejs")%>
+
+        <img src="/img/crearpeli.jpg" alt="" class="crearpeli-img">
+
+    <div class="crear-peli">
+
+            <h1 id="h1-crearpeli">Crear pelicula</h1>
+        <form action="/peliculas/crear" method="POST">
+            <label for="">Titulo</label>
+            <input type="text" name="titulo" id="" required>
+            <br>
+
+            <label for="">Duracion</label>
+            <input type="text" name="duracion" id="" required>
+            <br>
+
+            <label for="">Calificacion</label>
+            <input type="number" name="calificacion" id="" required>
+            <br>
+
+            <label for="">Premios</label>
+            <input type="number" name="premios" id="" required>
+            <br>
+
+            <label for="">Fecha de estreno</label>
+            <input type="date" name="fecha_estreno" id="" required>
+            <br>
+
+            <label for="">Genero</label>
+            <select name="genero" id="" required>
+            <% for (let i = 0; i < generos.length; i++) { %>
+                <option value="<%=generos[i].id%>">
+                    <%=generos[i].name%>
+                </option>
+            <% } %>
+            </select>
+            <br>
+
+            <button type="submit">Crear!</button>
+        </form>
+
+        
+    </div>
+        <img src="/img/crearpeli2.jpg" alt="" class="crearpeli-img">
+
+        <%-include("partials/footer.ejs")%>
+    </body>
+</html>

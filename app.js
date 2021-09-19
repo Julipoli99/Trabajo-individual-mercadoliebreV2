@@ -42,6 +42,7 @@ app.set('views', [path.join(__dirname, '/views'),
 const homeRouter = require ("./src/routes/homeRouter")
 const userRouter = require ("./src/routes/userRouter")
 const moviesRouter = require ("./src/routes/moviesRouter");
+const productRouter = require ("./src/routes/productRouter");
 
 
 
@@ -49,3 +50,4 @@ const moviesRouter = require ("./src/routes/moviesRouter");
 app.use("/", homeRouter);
 app.use("/login", userRouter);
 app.use("/peliculas", moviesRouter);
+app.use("/product", productRouter);

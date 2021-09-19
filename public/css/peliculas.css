@@ -1,0 +1,146 @@
+.contenedor-listadopelis{
+    border: solid 1px red;
+    
+}
+
+
+
+
+.listado-img{
+    border: black solid 1px;
+    width: 100vw;
+    height: 100%;
+    position:absolute;
+    
+    margin-left: 30%;
+    margin-top: 0;
+    
+}
+
+.listado-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+.ul-listadopelis{
+    margin-top: 20px;
+    display: inline-block;
+    
+}
+.ul-listadopelis li{
+    font-size: 20px;
+    padding-top: 15px;
+    border-bottom: black 1px solid;
+}
+.ul-listadopelis a{
+    font-size: 20px;
+}
+
+
+.ul-detallepeli{
+    margin-top: 20px;
+    display: inline-block;
+}
+.ul-detallepeli li{
+    font-size: 20px;
+    padding-top: 15px;
+}
+.ul-detallepeli p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#editar-peli{
+    margin-top: 20px;
+    font-size: 20px;
+}
+#editar-peli:hover{
+    background-color: blue;
+    color: white;
+    transition: .5s;
+}
+
+#borrar-peli{
+    margin-top: 20px;
+    font-size: 20px;
+}
+#borrar-peli:hover{
+    background-color: red;
+    color: white;
+    transition: .5s;
+}
+
+#boton-submit{
+    display: flex;
+    flex-direction: row;
+    
+}
+#boton-submit button{
+    font-size: 20px;
+    margin-top: 15px;
+}
+#boton-submit button:hover{
+    background-color: lightgreen;
+    transition: .5s;
+    
+}
+
+h1{
+    font-size: 25px;
+}
+
+
+
+/*                  CREAR PELICULA              */
+
+
+.crear-peli{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+
+
+#h1-crearpeli{
+    font-size: 30px;
+    color: darkred;
+}
+
+.crear-peli input, select, button{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.crear-peli label{
+    font-weight: bold;
+    font-size: 15px;
+    padding-right: 10px;
+    color: white;
+}
+
+.crear-peli button{
+    font-size: 20px;
+    width: 100%;
+    
+}
+
+
+
+
+
+.crearpeli-img{
+    width: 100%;
+    height: 30%;
+}

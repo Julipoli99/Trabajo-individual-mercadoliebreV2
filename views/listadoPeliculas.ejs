@@ -1,10 +1,22 @@
 <html>
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/peliculas.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/footer.css">
 
     <%- include("partials/header") %>
     <body>
+
         
+        <section class="contenedor-listadopelis">
+
         <h1 style="text-align:start;">Listado de Peliculas</h1>
+        <div id="boton-submit">
+        <a href="/peliculas/crear"><button type="submit">Crear pelicula</button></a>
+        </div>
+
+
+        
 
         <div class="ul-listadopelis">
         <ul>
@@ -16,6 +28,10 @@
             <% } %>
         </ul>
         </div>
+
+        </section>
+
+        <%-include("partials/footer.ejs")%>
     </body>
     
 </html>
